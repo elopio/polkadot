@@ -249,7 +249,7 @@ decl_module! {
 		}
 
 		fn on_finalize(now: T::BlockNumber) {
-			// If the current auction is in it ending period, then ensure that the (sub-)range
+			// If the current auction is in its ending period, then ensure that the (sub-)range
 			// winner information is duplicated from the previous block in case no bids happened
 			// in this block.
 			if let Some(offset) = Self::is_ending(now) {
